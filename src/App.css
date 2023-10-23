@@ -1,0 +1,9 @@
+.App {
+  margin: 0;
+  padding: 0;
+}
+.body {
+  min-height: calc(100vh - 50px);
+  padding-top: 80px;
+  display: flex;
+}
