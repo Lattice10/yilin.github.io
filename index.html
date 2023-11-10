@@ -104,9 +104,9 @@
                 </div>
                 <!-- <div><img src="aaa.gif" /></div> -->
                 <div ><button id="fun-button" type="button"
-                        class="btn btn-outline-primary btn-lg button_self">Button1</button>
+                        class="btn btn-outline-primary btn-lg button_self">First!</button>
                         <button id="fun-button2" type="button"
-                    class="btn btn-outline-primary btn-lg button_self">Button2</button></div>
+                    class="btn btn-outline-primary btn-lg button_self">Second!</button></div>
             </div>
             <!-- <img src="22.gif" /> -->
         </div>
@@ -115,8 +115,11 @@
 </body>
 <script>
     let index = 0;
+    let index2 = 0
     const study = () => {
-        alert('我真是个小天才！');
+        if (index < 1) {
+            alert('我真是个小天才！');
+        }
         index += 1;
         const newitem = document.createElement('div');
         newitem.classList.add('line');
@@ -132,7 +135,9 @@
         document.querySelector('body').appendChild(newitem);
     }
     const holiday = () => {
-        alert('我确实是个小天才！');
+        if (index2 < 1) {
+            alert('你也是');
+        }
         index += 1;
         const newitem = document.createElement('div');
         newitem.classList.add('line');
